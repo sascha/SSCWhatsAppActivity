@@ -1,7 +1,7 @@
 # SSCWhatsAppActivity
 
-[![Version](http://cocoapod-badges.herokuapp.com/v/SSCWhatsAppActivity/badge.png)](http://cocoadocs.org/docsets/foo)
-[![Platform](http://cocoapod-badges.herokuapp.com/p/SSCWhatsAppActivity/badge.png)](http://cocoadocs.org/docsets/foo)
+[![Version](http://cocoapod-badges.herokuapp.com/v/SSCWhatsAppActivity/badge.png)](http://cocoadocs.org/docsets/SSCWhatsAppActivity)
+[![Platform](http://cocoapod-badges.herokuapp.com/p/SSCWhatsAppActivity/badge.png)](http://cocoadocs.org/docsets/SSCWhatsAppActivity)
 
 ## Requirements
 
@@ -37,4 +37,4 @@ Sascha Schwabbauer, sascha.schwabbauer@me.com
 
 ## License
 
-foo is available under the MIT license. See the LICENSE file for more info.
+SSCWhatsAppActivity is available under the MIT license. See the LICENSE file for more info.
