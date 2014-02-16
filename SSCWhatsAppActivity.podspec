@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.license           = { :type => 'MIT', :file => 'LICENSE' }
   s.author            = { "Sascha Schwabbauer" => "sascha.schwabbauer@me.com" }
   s.source            = { :git => "https://github.com/sascha/SSCWhatsAppActivity.git", :tag => s.version.to_s }
-  s.social_media_url  = 'https://twitter.com/NAME'
+  s.social_media_url  = 'https://twitter.com/_SaschaS'
   
   s.platform          = :ios, '6.0'
   s.requires_arc      = true
