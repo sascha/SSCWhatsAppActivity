@@ -27,13 +27,13 @@ Typical usage will look something like this:
 	
 	[self presentViewController:activityViewController animated:YES completion:nil];
 	
-Have a look at the demo app to see it in context.
+Please note that you can only share instances of `NSString`, `NSURL` or `UIImage`. WhatsApp does not support sharing text and images at the same time, so as soon as you provide an `UIImage` all `NSString` and `NSURL` instances will be ignored. In addition you can only share **one** `UIImage`. Have a look at the demo app to see it in context.
 
 ![Demo screenshot](https://raw.github.com/sascha/SSCWhatsAppActivity/master/screenshot.png)
 
 ## Author
 
-Sascha Schwabbauer, sascha.schwabbauer@me.com
+Sascha Schwabbauer, sascha@evolved.io
 
 ## License
 
