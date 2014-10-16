@@ -23,6 +23,14 @@ NSString * const SSCActivityTypePostToWhatsApp = @"io.evolved.activity.postToWha
 
 #pragma mark - Accessors
 
+-(id)initWithPreferText:(BOOL)prefer{
+    self = [super init];
+    if(self){
+        self.preferText = prefer;
+    }
+    return self;
+}
+
 - (NSMutableArray *)stringsToShare {
     if (!_stringsToShare) {
         _stringsToShare = [NSMutableArray new];
