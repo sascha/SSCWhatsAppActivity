@@ -12,4 +12,6 @@ extern NSString * const SSCActivityTypePostToWhatsApp;
 
 @interface SSCWhatsAppActivity : UIActivity
 
+-(id)initWithPreferText:(BOOL)prefer;
+
 @end
