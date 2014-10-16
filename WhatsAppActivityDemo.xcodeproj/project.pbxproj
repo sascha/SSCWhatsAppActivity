@@ -21,6 +21,9 @@
 		2B1F005D18B1014100242DE9 /* SSCWhatsAppIcon-iOS6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1F005B18B1014000242DE9 /* SSCWhatsAppIcon-iOS6.png */; };
 		2B1F005E18B1014100242DE9 /* SSCWhatsAppIcon-iOS6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1F005C18B1014100242DE9 /* SSCWhatsAppIcon-iOS6@2x.png */; };
 		2B7A0AD019B3458F008DF6A6 /* shareImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2B7A0ACF19B3458F008DF6A6 /* shareImage.jpg */; };
+		7C73500219F01D1300C7F93C /* SSCWhatsAppIcon-iOS8.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C734FFF19F01D1300C7F93C /* SSCWhatsAppIcon-iOS8.png */; };
+		7C73500319F01D1300C7F93C /* SSCWhatsAppIcon-iOS8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C73500019F01D1300C7F93C /* SSCWhatsAppIcon-iOS8@2x.png */; };
+		7C73500419F01D1300C7F93C /* SSCWhatsAppIcon-iOS8@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C73500119F01D1300C7F93C /* SSCWhatsAppIcon-iOS8@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		2B1F005B18B1014000242DE9 /* SSCWhatsAppIcon-iOS6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SSCWhatsAppIcon-iOS6.png"; path = "SSCWhatsAppActivity/SSCWhatsAppIcon-iOS6.png"; sourceTree = "<group>"; };
 		2B1F005C18B1014100242DE9 /* SSCWhatsAppIcon-iOS6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SSCWhatsAppIcon-iOS6@2x.png"; path = "SSCWhatsAppActivity/SSCWhatsAppIcon-iOS6@2x.png"; sourceTree = "<group>"; };
 		2B7A0ACF19B3458F008DF6A6 /* shareImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shareImage.jpg; sourceTree = "<group>"; };
+		7C734FFF19F01D1300C7F93C /* SSCWhatsAppIcon-iOS8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SSCWhatsAppIcon-iOS8.png"; path = "SSCWhatsAppActivity/SSCWhatsAppIcon-iOS8.png"; sourceTree = "<group>"; };
+		7C73500019F01D1300C7F93C /* SSCWhatsAppIcon-iOS8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SSCWhatsAppIcon-iOS8@2x.png"; path = "SSCWhatsAppActivity/SSCWhatsAppIcon-iOS8@2x.png"; sourceTree = "<group>"; };
+		7C73500119F01D1300C7F93C /* SSCWhatsAppIcon-iOS8@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SSCWhatsAppIcon-iOS8@3x.png"; path = "SSCWhatsAppActivity/SSCWhatsAppIcon-iOS8@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,9 @@
 				2B1F005818B0FF9500242DE9 /* SSCWhatsAppIcon@2x.png */,
 				2B1F005B18B1014000242DE9 /* SSCWhatsAppIcon-iOS6.png */,
 				2B1F005C18B1014100242DE9 /* SSCWhatsAppIcon-iOS6@2x.png */,
+				7C734FFF19F01D1300C7F93C /* SSCWhatsAppIcon-iOS8.png */,
+				7C73500019F01D1300C7F93C /* SSCWhatsAppIcon-iOS8@2x.png */,
+				7C73500119F01D1300C7F93C /* SSCWhatsAppIcon-iOS8@3x.png */,
 			);
 			name = SSCWhatsAppActivity;
 			path = ../../SSCWhatsAppActivity;
@@ -181,9 +190,12 @@
 			files = (
 				2B1F005E18B1014100242DE9 /* SSCWhatsAppIcon-iOS6@2x.png in Resources */,
 				2B1F002B18B0FE1C00242DE9 /* InfoPlist.strings in Resources */,
+				7C73500319F01D1300C7F93C /* SSCWhatsAppIcon-iOS8@2x.png in Resources */,
 				2B1F005D18B1014100242DE9 /* SSCWhatsAppIcon-iOS6.png in Resources */,
 				2B7A0AD019B3458F008DF6A6 /* shareImage.jpg in Resources */,
 				2B1F005A18B0FF9500242DE9 /* SSCWhatsAppIcon@2x.png in Resources */,
+				7C73500219F01D1300C7F93C /* SSCWhatsAppIcon-iOS8.png in Resources */,
+				7C73500419F01D1300C7F93C /* SSCWhatsAppIcon-iOS8@3x.png in Resources */,
 				2B1F005918B0FF9500242DE9 /* SSCWhatsAppIcon.png in Resources */,
 				2B1F003318B0FE1C00242DE9 /* Images.xcassets in Resources */,
 			);
