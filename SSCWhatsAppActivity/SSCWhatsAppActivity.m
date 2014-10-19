@@ -15,12 +15,21 @@ NSString * const SSCActivityTypePostToWhatsApp = @"io.evolved.activity.postToWha
 @property (nonatomic, strong) UIDocumentInteractionController *documentInteractionController;
 @property (nonatomic, strong) NSMutableArray *stringsToShare;
 @property (nonatomic, strong) UIImage *imageToShare;
+@property BOOL preferText;
 
 @end
 
 @implementation SSCWhatsAppActivity
 
 #pragma mark - Accessors
+
+-(id)initWithPreferText:(BOOL)prefer{
+    self = [super init];
+    if(self){
+        self.preferText = prefer;
+    }
+    return self;
+}
 
 - (NSMutableArray *)stringsToShare {
     if (!_stringsToShare) {
@@ -43,8 +52,10 @@ NSString * const SSCActivityTypePostToWhatsApp = @"io.evolved.activity.postToWha
 - (UIImage *)activityImage {
     if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
         return [UIImage imageNamed:@"SSCWhatsAppIcon-iOS6"];
-    } else {
+    } else if(floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_7_1){
         return [UIImage imageNamed:@"SSCWhatsAppIcon"];
+    }else {
+        return [UIImage imageNamed:@"SSCWhatsAppIcon-iOS8"];
     }
 }
 
@@ -88,7 +99,7 @@ NSString * const SSCActivityTypePostToWhatsApp = @"io.evolved.activity.postToWha
 }
 
 - (void)performActivity {
-    if (self.imageToShare) {
+    if (self.imageToShare && !self.preferText) {
         [self sendImageToDocumentInteractionController:self.imageToShare];
     } else {
         [self sendStringToWhatsApp:[self.stringsToShare componentsJoinedByString:@" "]];
