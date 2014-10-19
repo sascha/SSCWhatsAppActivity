@@ -15,7 +15,7 @@ NSString * const SSCActivityTypePostToWhatsApp = @"io.evolved.activity.postToWha
 @property (nonatomic, strong) UIDocumentInteractionController *documentInteractionController;
 @property (nonatomic, strong) NSMutableArray *stringsToShare;
 @property (nonatomic, strong) UIImage *imageToShare;
-@property BOOL preferText;
+@property (nonatomic, assign, getter=isTextPreferred) BOOL textPreferred;
 
 @end
 
@@ -23,11 +23,11 @@ NSString * const SSCActivityTypePostToWhatsApp = @"io.evolved.activity.postToWha
 
 #pragma mark - Accessors
 
--(id)initWithPreferText:(BOOL)prefer{
-    self = [super init];
-    if(self){
-        self.preferText = prefer;
+- (instancetype)initWithTextPreferred:(BOOL)preferText {
+    if ((self = [super init])) {
+        _textPreferred = preferText;
     }
+    
     return self;
 }
 
@@ -53,8 +53,8 @@ NSString * const SSCActivityTypePostToWhatsApp = @"io.evolved.activity.postToWha
     if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
         return [UIImage imageNamed:@"SSCWhatsAppIcon-iOS6"];
     } else if(floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_7_1){
-        return [UIImage imageNamed:@"SSCWhatsAppIcon"];
-    }else {
+        return [UIImage imageNamed:@"SSCWhatsAppIcon-iOS7"];
+    } else {
         return [UIImage imageNamed:@"SSCWhatsAppIcon-iOS8"];
     }
 }
@@ -99,7 +99,7 @@ NSString * const SSCActivityTypePostToWhatsApp = @"io.evolved.activity.postToWha
 }
 
 - (void)performActivity {
-    if (self.imageToShare && !self.preferText) {
+    if (self.imageToShare && !self.isTextPreferred) {
         [self sendImageToDocumentInteractionController:self.imageToShare];
     } else {
         [self sendStringToWhatsApp:[self.stringsToShare componentsJoinedByString:@" "]];
