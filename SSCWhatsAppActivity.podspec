@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name              = "SSCWhatsAppActivity"
-  s.version           = "1.2.1"
+  s.version           = "1.2.2"
   s.summary           = "A UIActivity subclass for sharing images and messages with WhatsApp."
   s.homepage          = "https://github.com/sascha/SSCWhatsAppActivity"
   s.screenshots       = "https://raw.github.com/sascha/SSCWhatsAppActivity/master/screenshot.png"
